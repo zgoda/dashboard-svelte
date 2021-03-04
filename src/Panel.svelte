@@ -1,4 +1,5 @@
 <script>
+  import BrewItem from './BrewItem.svelte';
   export let title;
   export let items = [];
 </script>
@@ -14,10 +15,8 @@
     <div class="panel-title h4">{title}</div>
   </div>
   <div class="panel-body">
-    <ul>
-      {#each items as item}
-        <li>{item.text}</li>
-      {/each}
-    </ul>
+    {#each items as item}
+      <BrewItem brew={item}/>
+    {/each}
   </div>
 </div>
