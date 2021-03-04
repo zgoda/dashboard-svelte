@@ -1,16 +1,26 @@
 <script>
   import Panel from './Panel.svelte';
+  const brews = {
+    fermenting: [
+      {
+        text: 'Pale Ale'
+      },
+      {
+        text: 'Dry Stout'
+      }
+    ]
+  }
 </script>
 
 <style lang="scss" global>
   @import '../node_modules/spectre.css/src/spectre.scss';
 </style>
 
-<div class="container grid-md">
+<div class="container grid-lg">
   <h1>Mój Brewlog</h1>
   <div class="columns">
     <div class="column col-sm-6">
-      <Panel title={'Fermentuje'}/>
+      <Panel title={'Fermentuje'} items={brews.fermenting}/>
     </div>
     <div class="column col-sm-6">
       <Panel title={'Dojrzewa'}/>
