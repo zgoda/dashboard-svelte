@@ -3,10 +3,12 @@
   const brews = {
     fermenting: [
       {
-        title: 'Pale Ale'
+        id: 1,
+        title: 'Pale Ale',
       },
       {
-        title: 'Dry Stout'
+        id: 2,
+        title: 'Dry Stout',
       }
     ]
   }

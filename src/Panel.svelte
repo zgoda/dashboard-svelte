@@ -15,7 +15,7 @@
     <div class="panel-title h4">{title}</div>
   </div>
   <div class="panel-body">
-    {#each items as item}
+    {#each items as item (item.id)}
       <BrewItem brew={item}/>
     {/each}
   </div>
